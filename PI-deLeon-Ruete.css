@@ -1,0 +1,645 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  width: 100%;
+}
+
+.navegacion {
+  padding: 15px 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #eee;
+}
+.navegacion ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: -15%;
+  font-size: 1em;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.navegacion a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bolder;
+  margin-right: 5em;
+}
+.boton {
+  border-radius: 15px;
+  background-color: #5227cc;
+  color: #eee;
+  padding: 0 20px;
+  font-size: 0.8em;
+  border: none;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(70, 70, 70, 0.4),
+      rgba(70, 70, 70, 0.4)
+    ),
+    url(Materiales/manos.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #eee;
+  gap: 2em;
+  padding: 0 10%;
+}
+header h1 {
+  font-size: 4em;
+  font-weight: 300;
+}
+header p {
+  font-size: 1.7em;
+  padding: 0 10%;
+}
+.uno {
+  grid-area: img1;
+}
+.imgCeleste {
+  width: 100%;
+  object-fit: cover;
+  min-height: 250px;
+  max-height: 300px;
+}
+.dos {
+  grid-area: img2;
+}
+.texto1 {
+  grid-area: texto1;
+}
+.texto2 {
+  grid-area: texto2;
+}
+.txtCeleste {
+  padding: 3em 1em 0 2em;
+}
+.txtCeleste p {
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+.txtCeleste h3 {
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+.celeste {
+  background-color: #5298ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "img1 texto1"
+    "texto2 img2";
+  color: #eee;
+  height: auto;
+  padding: 8%;
+  gap: 20px;
+}
+.sectionCuadrados {
+  height: auto;
+  margin-bottom: 100px;
+}
+.txtBlanco {
+  color: #333;
+  text-align: center;
+  /* margin: 0 17% 0 17%; */
+}
+.txtBlanco p {
+  padding: 0 20%;
+  font-size: 1.2em;
+}
+.txtBlanco h3 {
+  padding: 1.5em 1.5em 1em 1.5em;
+  height: 50%;
+  font-size: 1.9em;
+}
+.contenedorCuadrados {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  gap: 15px;
+  padding-top: 2em;
+  justify-content: center;
+  width: 100%;
+}
+.cuadrados {
+  /* max-width: 380px; */
+  min-width: 270px;
+  width: 19.5%;
+  height: 235px;
+
+  border-radius: 15px;
+  color: #eee;
+}
+.icono {
+  padding-top: 1.5em;
+  height: 4.2rem;
+  padding-left: 0.1em;
+}
+.manoRoja {
+  padding-top: 1.5em;
+  height: 5em;
+  padding-left: 1.2em;
+  margin-bottom: -0.5em;
+}
+.mas {
+  padding-top: 0.8em;
+  height: 1.7em;
+}
+.iconosCuadrados {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 1.6em;
+}
+.rojo {
+  background-color: #dc3545;
+}
+.amarillo {
+  background-color: #ff9c07;
+}
+.verde {
+  background-color: #28a745;
+}
+.azul {
+  background-color: #17a2b8;
+}
+.txtCuadrados {
+  padding: 0.7em 0 0 0.9em;
+  font-size: 1.7em;
+}
+.txtCuadrados h3 {
+  font-weight: lighter;
+}
+.noticias {
+  background-color: #5298ff;
+  height: auto;
+  text-align: center;
+  padding: 3.5em 1em;
+  color: #eee;
+  /* font-size: larger; */
+}
+.noticias h2 {
+  font-size: 1.9em;
+  padding-bottom: 0.7em;
+}
+
+.noticias a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 70vh;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2.4em;
+}
+.cards {
+  position: relative;
+  height: auto;
+  width: 19.5%;
+  min-width: 270px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: left;
+  min-height: 420px;
+}
+.txtCard {
+  color: #333;
+  padding: 0em 1em 0 1em;
+}
+.txtCard h4 {
+  margin-bottom: 1.4em;
+  font-weight: 900;
+}
+
+.cardImg {
+  position: relative;
+  height: 35%;
+  object-fit: scale-down;
+}
+.conatin {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contenedorFecha {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+.cardFecha {
+  color: #333;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardFecha p {
+  display: flex;
+  align-self: baseline;
+  gap: 4px;
+}
+.verMas {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  color: #333;
+  display: flex;
+  gap: 5px;
+  padding: 10px 10px 0 0;
+  align-items: baseline;
+}
+.indicadoresCarrusel {
+  bottom: -50px !important;
+}
+.cardButton {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.7em;
+}
+.formContainer {
+  display: flex;
+  align-items: stretch;
+  padding: 50px;
+  text-align: center;
+  background-color: #efefef;
+  justify-content: center;
+  height: auto;
+  max-height: 55vh;
+  margin-bottom: -50px;
+  gap: 20px;
+}
+.imgForm {
+  width: 45%;
+}
+.imgForm img {
+  object-fit: cover;
+  width: 100%;
+  height: 80%;
+}
+.formGridContainer {
+  width: 45%;
+}
+.formGridContainer h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
+}
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "txtDato1 Mensaje"
+    "txtDato2 Mensaje";
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 3%;
+}
+.mensaje {
+  grid-area: Mensaje;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.submit {
+  border-radius: 15px;
+  background-color: #5227cc;
+  color: #eee;
+  font-size: 0.8em;
+  border: none;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+textarea {
+  resize: none !important;
+  border-radius: 8px;
+  padding: 0.5em 0.8em;
+}
+input {
+  padding: 0.2em 0.6em;
+  border-radius: 8px;
+  border: solid 1px #777;
+}
+
+footer {
+  background-color: #5227cc;
+  color: white;
+  padding-top: 5px;
+  margin-top: 50px;
+}
+.footerContainer {
+  box-shadow: 0px -5px 7px 0px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+  padding: 20px 130px;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  background-color: #5227cc;
+}
+.footerLogoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.footerLogoContainer img {
+  height: 25px;
+  box-shadow: 73px 0px 500px 104px rgba(255, 255, 255, 0.3);
+}
+.footerLogoContainer a {
+  text-decoration: none;
+  color: white;
+}
+.footerLogoContainer ul {
+  list-style: none;
+}
+.copyright {
+  display: flex;
+  padding: 5px;
+  background-color: #5227cc;
+  justify-content: center;
+  color: #333;
+}
+.redesContainer img {
+  height: 20px;
+}
+.redesContainer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5px;
+  padding-left: 5px;
+}
+.popUpNone {
+  display: none;
+}
+.popUpContainer {
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  z-index: 5;
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  box-shadow: 14px 73px 4000px 4000px rgba(0, 0, 0, 0.75);
+  border: solid 1px #eee;
+  border-radius: 15px;
+}
+.popUpRegistrar {
+  background-color: #eee;
+  width: 50%;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 0 15px 15px 0;
+}
+.registrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+.popUpVolverAtras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.popUpVolverAtras a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-top: 10px;
+  color: #555;
+}
+.popUpVolverAtras h6 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.flechaInvertida {
+  transform: rotate(180deg);
+}
+.popUpImg {
+  width: 50%;
+}
+.popUpImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+.cardPopUp {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 20px;
+  height: 9em;
+}
+.maletinCelesteContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5298ff;
+  border-radius: 10px 0px 0px 10px;
+}
+.maletinCelesteContainer img {
+  width: 50%;
+  height: auto;
+}
+.cardPopUpEmpresa {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 1em;
+}
+.cardPopUpEmpresa h3 {
+  color: #5298ff;
+}
+.cardPopUpEmpresa img {
+  width: 15px;
+  align-self: flex-end;
+}
+.menuHamburguesa {
+  display: none;
+}
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .navegacion ul {
+    display: none;
+  }
+  .navegacion button {
+    display: none;
+  }
+
+  .menuHamburguesa {
+    display: block;
+    height: 25px;
+  }
+  header {
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+  }
+  header h1 {
+    font-size: 2em;
+    padding: 0;
+  }
+  header p {
+    font-size: 1em;
+    padding: 0;
+  }
+  .celeste {
+    display: block;
+    height: auto;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .celeste h3{
+    text-align: center;
+  }
+
+  .txtCeleste {
+    padding: 1em 1em 2em 0.8em;
+  }
+  .txtBlanco p {
+    padding: 0 5%;
+  }
+  .txtBlanco h3 {
+    padding: 1.5em 1em 1em 1em;
+  }
+  .cardsContainer {
+    display: flex;
+    flex-flow: wrap row;
+  }
+  .noticias {
+    height: auto;
+  }
+  .verMas {
+    position: static;
+    padding: 0 5px 10px 10px;
+  }
+
+  .formContainer {
+    min-height: 60vh;
+    display: flex;
+    flex-flow: column;
+    padding-top: 100px;
+  }
+  .formGridContainer {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .imgForm {
+    width: auto;
+    display: none;
+  }
+
+  .formGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 0;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 0 0 0px;
+  }
+  .footerLogoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 0;
+  }
+  .footerLogoContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+  .footerLogoContainer img {
+    height: 35px;
+    padding-bottom: 0px;
+    /* width: 35%; */
+    box-shadow: none;
+  }
+  .redesContainer img {
+    height: 35px;
+  }
+  .redesContainer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    padding-left: 0;
+  }
+  .redesContainer p {
+    display: none;
+  }
+  .popUpContainer {
+    left: 5%;
+    width: 90%;
+    height: auto;
+    min-height: 70vh;
+    background-color: #eee;
+    flex-direction: column;
+  }
+  .popUpRegistrar {
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .popUpImg {
+    display: none;
+  }
+
+  .cardPopUp {
+    margin-top: 10px;
+    height: 10em;
+  }
+}

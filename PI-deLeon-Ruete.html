@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="PI-deLeon-Ruete.css" />
+  </head>
+  <body>
+    <nav class="navegacion">
+      <img
+        src="Materiales/logo.png"
+        alt="logo_nexos"
+        width="150"
+        height="auto"
+      />
+      <img
+        src="Materiales/menuHamburguesa.png"
+        alt="menuHamburguesa"
+        class="menuHamburguesa"
+        onclick="popUpOpener()"
+      />
+      <ul>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Noticias">Noticias</a></li>
+        <li><a href="#Ayuda">Ayuda</a></li>
+      </ul>
+      <button onclick="popUpOpener()" class="boton">INGRESAR</button>
+    </nav>
+    <section class="popUpNone" id="Ingresar">
+      <div class="popUpImg">
+        <img src="/Materiales/imagen-modal.JPG" alt="oscarWilde" />
+      </div>
+      <div class="popUpRegistrar">
+        <div class="popUpVolverAtras">
+          <a href=""
+            ><h6 onclick="popUpOpener()">
+              <img
+                src="/Materiales/icono-flecha.png"
+                alt="iconoFlecha"
+                class="flechaInvertida"
+              />volver atrás
+            </h6></a
+          >
+          <a href="" onclick="popUpOpener()"
+            ><img src="/Materiales/cruzpng.png" alt="cruz" height="15px"
+          /></a>
+        </div>
+        <div class="registrar">
+          <h3>REGISTRAR</h3>
+          <div class="cardPopUp">
+            <div class="maletinCelesteContainer">
+              <img src="/Materiales/icono-maletin.png" alt="iconoMaletin" />
+            </div>
+            <div class="cardPopUpEmpresa">
+              <h3>MI EMPRESA</h3>
+              <p>Breve explicación a lo que nos referimos</p>
+              <img src="/Materiales/icono-flecha.png" alt="iconoFlecha" />
+            </div>
+          </div>
+          <div class="cardPopUp">
+            <div class="maletinCelesteContainer">
+              <img src="/Materiales/icono-maletin.png" alt="iconoMaletin" />
+            </div>
+            <div class="cardPopUpEmpresa">
+              <h3>MI ORGANIZACIÓN</h3>
+              <p>Breve explicación a lo que nos referimos</p>
+              <img src="/Materiales/icono-flecha.png" alt="iconoFlecha" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <header>
+      <h1>¡Actúa para cambiar el mundo!</h1>
+      <p>
+        Fomentamos el vínculo entre empresas y organizaciones civiles para
+        generar un impacto positivo en la sociedad.<br />
+        Descubrí diferentes maneras de incolucrar tu organización con la
+        sociedad.
+      </p>
+    </header>
+
+    <main>
+      <section class="celeste" id="Nosotros">
+        <div class="texto1 txtCeleste">
+          <h3>Soluciones para empresas</h3>
+          <p>
+            Generamos un medio para que las empresas se involucren en
+            actividades de responsabilidad social.<br />
+            ¡Creá un grupo de voluntarios en tu organización y sé parte del
+            cambio!
+          </p>
+        </div>
+        <div class="img uno">
+          <img src="Materiales/oficina.png" alt="oficina" class="imgCeleste" />
+        </div>
+        <div class="texto2 txtCeleste">
+          <h3>Soluciones para organizaciones</h3>
+          <p>
+            Apoyamos a las organizaciones sociales para que alcancen sus
+            objetivos. Ponemos a asu disposición una comunidad de voluntarios
+            dispuestos a apoyarlas en sus necesidades.<br />
+            Equipos de voluntarios por empresas dispuestos a potenciar tu
+            impacto en la sociedad.
+          </p>
+        </div>
+        <div class="img dos">
+          <img
+            src="Materiales/voluntariado.jpg"
+            alt="voluntariado"
+            class="imgCeleste"
+          />
+        </div>
+      </section>
+      <section class="sectionCuadrados">
+        <div class="txtBlanco">
+          <h3>Encuentra las mejores oportunidades</h3>
+          <p>
+            La plataforma cuenta con gran variedad de proyectos locales
+            (sociales, educativos y medioambientes), donde encontrarás el que
+            mejor se adapte a la experiencias que estás buscando.<br />
+            Te ayudamos en la coordinación con la organización de forma simple y
+            rápida.
+          </p>
+        </div>
+        <div class="contenedorCuadrados">
+          <div class="cuadrados rojo">
+            <div class="iconosCuadrados">
+              <img
+                class="manoRoja"
+                src="Materiales/icono-mano.png"
+                alt="iconoMano"
+              />
+              <img src="Materiales/icono-mas.png" alt="iconoMas" class="mas" />
+            </div>
+            <div class="txtCuadrados">
+              <h3>Ser voluntario</h3>
+            </div>
+          </div>
+          <div class="cuadrados amarillo">
+            <div class="iconosCuadrados">
+              <img
+                class="icono"
+                src="Materiales/icono-mano-corazon.png"
+                alt="iconoManoCorazon"
+              />
+              <img src="Materiales/icono-mas.png" alt="iconoMas" class="mas" />
+            </div>
+            <div class="txtCuadrados">
+              <h3>Donar</h3>
+            </div>
+          </div>
+          <div class="cuadrados verde">
+            <div class="iconosCuadrados">
+              <img
+                class="icono"
+                src="Materiales/icono-reciclar.png"
+                alt="iconoReciclar"
+              />
+              <img src="Materiales/icono-mas.png" alt="iconoMas" class="mas" />
+            </div>
+            <div class="txtCuadrados">
+              <h3>Reciclar</h3>
+            </div>
+          </div>
+          <div class="cuadrados azul">
+            <div class="iconosCuadrados">
+              <img
+                class="icono"
+                src="Materiales/icono-maletin.png"
+                alt="iconoMaletin"
+              />
+              <img src="Materiales/icono-mas.png" alt="iconoMas" class="mas" />
+            </div>
+            <div class="txtCuadrados">
+              <h3>Llamados <br />laborales</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="noticias" id="Noticias">
+        <div>
+          <h2>Noticias</h2>
+          <a href="">ver todos</a>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="true"
+          >
+            <div class="carousel-indicators indicadoresCarrusel">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cardsContainer">
+                  <div class="cards">
+                    <div class="cardImg">
+                      <img
+                        src="Materiales/oficina.png"
+                        alt="foto"
+                        class="conatin"
+                        height="100%"
+                        width="100%"
+                      />
+                      <button class="cardButton boton">ANIMALES</button>
+                    </div>
+                    <div class="cardFecha">
+                      <p>
+                        <img
+                          src="Materiales/icono-calendario.png"
+                          alt="calendario"
+                        />
+                        22/22/2222
+                      </p>
+                      <p>
+                        <img src="Materiales/icono-reloj.png" alt="reloj" /> 4
+                        min
+                      </p>
+                    </div>
+                    <div class="txtCard">
+                      <h4>Carta número uno.</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cum dignissimos nam velit atque enim corrupti
+                        similique fuga qui numquam.
+                      </p>
+                    </div>
+                    <div class="verMas">
+                      <img src="Materiales/icono-flecha.png" alt="flecha" />
+                      <p>ver más</p>
+                    </div>
+                  </div>
+                  <div class="cards">
+                    <div class="cardImg">
+                      <img
+                        src="Materiales/oficina.png"
+                        alt="foto"
+                        class="conatin"
+                        height="100%"
+                        width="100%"
+                      />
+                      <button class="cardButton boton">ANIMALES</button>
+                    </div>
+                    <div class="cardFecha">
+                      <p>
+                        <img
+                          src="Materiales/icono-calendario.png"
+                          alt="calendario"
+                        />
+                        22/22/2222
+                      </p>
+                      <p>
+                        <img src="Materiales/icono-reloj.png" alt="reloj" /> 4
+                        min
+                      </p>
+                    </div>
+                    <div class="txtCard">
+                      <h4>Carta número dos.</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cum dignissimos nam velit atque enim corrupti
+                        similique fuga qui numquam.
+                      </p>
+                    </div>
+                    <div class="verMas">
+                      <img src="Materiales/icono-flecha.png" alt="flecha" />
+                      <p>ver más</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cardsContainer">
+                  <div class="cards">
+                    <div class="cardImg">
+                      <img
+                        src="Materiales/oficina.png"
+                        alt="foto"
+                        class="conatin"
+                        height="100%"
+                        width="100%"
+                      />
+                      <button class="cardButton boton">ANIMALES</button>
+                    </div>
+                    <div class="cardFecha">
+                      <p>
+                        <img
+                          src="Materiales/icono-calendario.png"
+                          alt="calendario"
+                        />
+                        22/22/2222
+                      </p>
+                      <p>
+                        <img src="Materiales/icono-reloj.png" alt="reloj" /> 4
+                        min
+                      </p>
+                    </div>
+                    <div class="txtCard">
+                      <h4>Carta número tres.</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cum dignissimos nam velit atque enim corrupti
+                        similique fuga qui numquam.
+                      </p>
+                    </div>
+                    <div class="verMas">
+                      <img src="Materiales/icono-flecha.png" alt="flecha" />
+                      <p>ver más</p>
+                    </div>
+                  </div>
+                  <div class="cards">
+                    <div class="cardImg">
+                      <img
+                        src="Materiales/oficina.png"
+                        alt="foto"
+                        class="conatin"
+                        height="100%"
+                        width="100%"
+                      />
+                      <button class="cardButton boton">ANIMALES</button>
+                    </div>
+                    <div class="cardFecha">
+                      <p>
+                        <img
+                          src="Materiales/icono-calendario.png"
+                          alt="calendario"
+                        />
+                        22/22/2222
+                      </p>
+                      <p>
+                        <img src="Materiales/icono-reloj.png" alt="reloj" /> 4
+                        min
+                      </p>
+                    </div>
+                    <div class="txtCard">
+                      <h4>Carta número cuatro.</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cum dignissimos nam velit atque enim corrupti
+                        similique fuga qui numquam.
+                      </p>
+                    </div>
+                    <div class="verMas">
+                      <img src="Materiales/icono-flecha.png" alt="flecha" />
+                      <p>ver más</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cardsContainer">
+                  <div class="cards">
+                    <div class="cardImg">
+                      <img
+                        src="Materiales/oficina.png"
+                        alt="foto"
+                        class="conatin"
+                        height="100%"
+                        width="100%"
+                      />
+                      <button class="cardButton boton">ANIMALES</button>
+                    </div>
+                    <div class="cardFecha">
+                      <p>
+                        <img
+                          src="Materiales/icono-calendario.png"
+                          alt="calendario"
+                        />
+                        22/22/2222
+                      </p>
+                      <p>
+                        <img src="Materiales/icono-reloj.png" alt="reloj" /> 4
+                        min
+                      </p>
+                    </div>
+                    <div class="txtCard">
+                      <h4>Carta número cinco.</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cum dignissimos nam velit atque enim corrupti
+                        similique fuga qui numquam.
+                      </p>
+                    </div>
+                    <div class="verMas">
+                      <img src="Materiales/icono-flecha.png" alt="flecha" />
+                      <p>ver más</p>
+                    </div>
+                  </div>
+                  <div class="cards">
+                    <div class="cardImg">
+                      <img
+                        src="Materiales/oficina.png"
+                        alt="foto"
+                        class="conatin"
+                        height="100%"
+                        width="100%"
+                      />
+                      <button class="cardButton boton">ANIMALES</button>
+                    </div>
+                    <div class="cardFecha">
+                      <p>
+                        <img
+                          src="Materiales/icono-calendario.png"
+                          alt="calendario"
+                        />
+                        22/22/2222
+                      </p>
+                      <p>
+                        <img src="Materiales/icono-reloj.png" alt="reloj" /> 4
+                        min
+                      </p>
+                    </div>
+                    <div class="txtCard">
+                      <h4>Carta número seis.</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam cum dignissimos nam velit atque enim corrupti
+                        similique fuga qui numquam.
+                      </p>
+                    </div>
+                    <div class="verMas">
+                      <img src="Materiales/icono-flecha.png" alt="flecha" />
+                      <p>ver más</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="formContainer" id="Ayuda">
+        <div class="imgForm">
+          <img src="Materiales/laptop-escritorio.jpg" alt="laptopEscritorio" />
+        </div>
+        <div class="formGridContainer">
+          <h2>Contacto</h2>
+          <form action="input">
+            <div class="formGrid">
+              <div class="input">
+                <label for="textoDato1">Texto dato</label>
+                <input type="text" value="Dato a completar" name="textoDato1" />
+              </div>
+              <div class="input">
+                <label for="textoDato2">Texto dato</label>
+                <input type="text" value="Dato a completar" name="textoDato2" />
+              </div>
+              <div class="mensaje input">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id=""
+                  cols="10"
+                  rows="4"
+                  placeholder="Escribe tu mensaje aquí"
+                ></textarea>
+              </div>
+            </div>
+            <input class="submit" type="submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerContainer">
+        <div class="footerLogoContainer">
+          <img src="Materiales/logo-blanco.png" alt="logoNexos" />
+          <ul>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#Noticias">Noticias</a></li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li>
+              <a href="" onclick="popUpOpener()">Terminos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+        <div class="redesContainer">
+          <p>Seguinos!</p>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com"
+                ><img src="Materiales/Facebook.png" alt="logoFacebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"
+                ><img src="Materiales/Twitter.png" alt="logoTwitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><img src="/Materiales/Instagram.png" alt="logoInstagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2021 All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="PI-deLeon-Ruete.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
